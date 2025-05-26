@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Question Paper Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <h1 class="logo">QPaperGen</h1>
+      <nav class="nav">
+        <a href="#generator" class="nav-link">Generate Paper</a>
+        <a href="#yourPaper" class="nav-link">Your Paper</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+  
+    <section class="hero">
+    <div class="container hero-content">
+      <h2>Generate Custom Question Papers Easily</h2>
+      <p>Select your class, subject, topics, difficulty, and question types to create tailored question papers with mathematical notation support.</p>
+      <a href="#generator" class="btn-primary">Start Generating</a>
+	  <a href="answer.html" class="btn-primary">Search for Solution</a>
+    </div>
+  </section>
+
+ <main id="generator" class="container main-content">
+    <h2>Question Bank</h2>
+	
+  <div class="filter-group">
+    <label for="filter-class">Class:</label>
+    <select id="filter-class"><option value="">All</option></select>
+
+    <label for="filter-subject">Subject:</label>
+    <select id="filter-subject"><option value="">All</option></select>
+
+    <label for="filter-topic">Topic:</label>
+    <select id="filter-topic"><option value="">All</option></select>
+
+    <label for="filter-year">Year:</label>
+    <select id="filter-year"><option value="">All</option></select>
+
+    <label for="filter-type">Type:</label>
+    <select id="filter-type"><option value="">All</option></select>
+  </div>
+
+  <div id="question-list" class="question-list" aria-live="polite" aria-label="Filtered Questions"></div>
+
+  <div class="pagination">
+    <button id="prev-page" disabled>Previous</button>
+    <span id="page-info">Page 1 of 1</span>
+    <button id="next-page" disabled>Next</button>
+  </div>
+
+
+  
+   <section id="yourPaper" class="container main-content" aria-label="Your Question Paper">
+      <h2>Selected Questions</h2>
+      <div id="selected-questions" class="question-list" aria-live="polite" aria-label="Selected Questions in Paper"></div>
+    </section>
+	   <section id="exam-details" class="container main-content" style="margin-top:30px;">
+      <h2>Exam Details</h2>
+	  
+	  
+	  <div class="paper-meta" style="margin: 20px 0; display: flex; flex-wrap: wrap; gap: 15px;">
+      <div class="input-group">
+        <label for="exam-name">Exam Name:</label>
+        <input type="text" id="exam-name" placeholder="e.g., Mid-Term Exam, Unit Test">
+      </div>
+      <div class="input-group">
+        <label for="institute-name">Institute Name:</label>
+        <input type="text" id="institute-name" placeholder="e.g., ABC School, XYZ College">
+      </div>
+      <div class="input-group">
+        <label for="paper-subject">Subject Name:</label>
+        <input type="text" id="paper-subject" placeholder="e.g., Mathematics, Physics">
+      </div>
+      <div class="input-group">
+        <label for="exam-duration">Duration (e.g., 2h 30min):</label>
+        <input type="text" id="exam-duration" placeholder="e.g., 3 hours, 90 minutes">
+      </div>
+	 </div> 
+	  
+
+
+
+    </section>
+  <div class="generate-button-container">
+    <button onclick="generateQuestionPaper()">Generate Question Paper</button>
+  </div>
+
+</main>
+
+  <footer id="about" class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2025 QPaperGen. All rights reserved.</p>
+      <p>Made with ❤️ for educators and students.</p>
+      <p>Contact: <a href="mailto:support@qpapergen.com">support@qpapergen.com</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,446 @@
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f4f7f6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #1abc9c;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #3498db, #1abc9c);
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #f39c12;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: #e67e22;
+    transform: translateY(-2px);
+}
+
+/* Main Content & Generator Section */
+.main-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-top: 30px;
+}
+
+.main-content h2 {
+  color: var(--primary-color);
+  text-align: center; /* This line is already present */
+  margin-bottom: 30px;
+  font-size: 2em;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+
+.main-content h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Filter Group */
+.filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #eaf1f1;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.filter-group label {
+    font-weight: bold;
+    color: #555;
+    align-self: center;
+}
+
+.filter-group select {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    flex-grow: 1; /* Allow selects to grow */
+    min-width: 150px; /* Ensure a minimum width */
+    appearance: none; /* Remove default arrow */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%20viewBox%3D%220%200%20292.4%20292.4%22%3E%3Cpath%20fill%3D%22%23000%22%20d%3D%22M287%20197.9a15%2015%200%2001-10.6%204.4H15.9a15%2015%200%2001-10.6-4.4c-4.1-4.1-4.1-10.8%200-14.9L131.2%205.5a15%2015%200%200121.2%200l116.5%20177.5c4.1%204.1%204.1%2010.8%200%2014.9z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 12px auto;
+    cursor: pointer;
+}
+
+
+/* Styling for the search container */
+.search-container {
+  display: flex; /* Arranges children in a row */
+  flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+  gap: 10px; /* Space between flex items */
+  margin-bottom: 20px; /* Space below the search container */
+  align-items: center; /* Vertically aligns items in the center */
+  justify-content: center; /* Horizontally centers items */
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the search input field */
+#solution-search-input {
+  flex-grow: 1; /* Allows the input to take up available space */
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  min-width: 180px; /* Ensures input is not too small */
+}
+
+/* Styling for select dropdowns */
+.search-container select {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff;
+  cursor: pointer;
+  -webkit-appearance: none; /* Removes default dropdown arrow in WebKit browsers */
+  -moz-appearance: none; /* Removes default dropdown arrow in Mozilla browsers */
+  appearance: none; /* Removes default dropdown arrow */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%20viewBox%3D%220%200%20292.4%20292.4%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M287%2C197.8L159.2%2C68.9c-2.3-2.3-5.1-3.6-8.1-3.6c-3%2C0-5.8%2C1.3-8.1%2C3.6L5.4%2C197.8c-4.7%2C4.7-4.7%2C12.3%2C0%2C17c4.7%2C4.7%2C12.3%2C4.7%2C17%2C0l136-136l136%2C136c4.7%2C4.7%2C12.3%2C4.7%2C17%2C0C291.7%2C210.1%2C291.7%2C202.5%2C287%2C197.8z%22%2F%3E%3C%2Fsvg%3E'); /* Custom arrow for dropdowns */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  padding-right: 30px; /* Make space for the custom arrow */
+}
+
+/* Styling for the search button */
+.search-container button {
+  padding: 10px 20px;
+  background-color: #007bff; /* A nice blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.search-container button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column; /* Stacks items vertically on smaller screens */
+    align-items: stretch; /* Stretches items to full width */
+  }
+
+  #solution-search-input,
+  .search-container select,
+  .search-container button {
+    width: 100%; /* Full width for inputs and button */
+  }
+}
+
+
+/* Question List Styles */
+.question-list {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    margin-bottom: 25px;
+}
+
+.question-item {
+    background: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.question-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.question-item p {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.question-item ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.question-item ul li {
+    margin-bottom: 8px;
+    padding: 5px 0;
+    border-bottom: 1px dotted #eee;
+}
+
+.question-item button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+}
+
+.question-item button:hover {
+    background: #218838;
+}
+
+/* Selected Questions Section (Your Paper) */
+#selected-questions .question-item {
+    background: #eaf8f5; /* Lighter background for selected questions */
+    border-color: #1abc9c;
+}
+
+#selected-questions .question-item label {
+    font-weight: normal;
+    margin-right: 10px;
+    color: #555;
+}
+
+#selected-questions .question-item input[type="number"] {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+#selected-questions .question-item button {
+    background: #dc3545; /* Red for remove button */
+}
+
+#selected-questions .question-item button:hover {
+    background: #c82333;
+}
+
+/* Pagination Controls */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.pagination button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+    background: #2980b9;
+}
+
+.pagination button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+
+/* Generate Button */
+.generate-button-container {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.generate-button-container button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.generate-button-container button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Footer Styles */
+.footer {
+    background: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #1abc9c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #f39c12;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        margin-top: 15px;
+    }
+
+    .nav-link {
+        margin: 0 10px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .filter-group {
+        flex-direction: column;
+    }
+
+    .filter-group label,
+    .filter-group select {
+        width: 100%;
+    }
+
+    .question-list {
+        grid-template-columns: 1fr; /* Stack questions on smaller screens */
+    }
+}
+/* ... (existing styles) ... */
+
+/* Styles for Exam Details input group */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group input[type="text"] {
+    width: calc(100% - 20px); /* Adjust for padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* MathJax specific styling (optional, but good practice) */
+.MathJax {
+  font-size: 1.1em !important; /* Slightly larger math */
+}
+
+/* ... (rest of your styles) ... */
